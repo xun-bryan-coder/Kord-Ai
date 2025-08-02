@@ -3,13 +3,13 @@ const { existsSync } = require('fs')
 if (existsSync('config.env')) require('dotenv').config({ path: './config.env' })
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || '',
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "2349067339193",
+    SESSION_ID: process.env.SESSION_ID || 'kord_ai-vKd3oCb6DD0b2Wg2',
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "2348165820748",
     WORKTYPE: process.env.WORKTYPE || "private",
     PREFIX: process.env.PREFIX || "[.]",
-    ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || true,
+    ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || false ,
     MONGODB_URI: process.env.MONGODB_URI || "",
-    STATUS_VIEW: process.env.STATUS_VIEW || true,
+    STATUS_VIEW: process.env.STATUS_VIEW || false,
     SAVE_STATUS: process.env.SAVE_STATUS || false,
     LIKE_STATUS: process.env.SAVE_STATUS || false,
     STATUS_EMOJI: process.env.STATUS_EMOJI || "🥏",
